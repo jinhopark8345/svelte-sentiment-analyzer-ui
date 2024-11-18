@@ -499,10 +499,10 @@ var app = (function () {
     			t1 = space();
     			p = element("p");
     			t2 = text(/*prediction*/ ctx[0]);
-    			add_location(h2, file, 96, 6, 2621);
-    			add_location(p, file, 97, 6, 2655);
+    			add_location(h2, file, 96, 6, 2603);
+    			add_location(p, file, 97, 6, 2637);
     			attr_dev(div, "class", "result svelte-topaqz");
-    			add_location(div, file, 95, 4, 2594);
+    			add_location(div, file, 95, 4, 2576);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -542,9 +542,9 @@ var app = (function () {
     			p = element("p");
     			t = text(/*errorMessage*/ ctx[5]);
     			attr_dev(p, "class", "svelte-topaqz");
-    			add_location(p, file, 103, 6, 2786);
+    			add_location(p, file, 103, 6, 2768);
     			attr_dev(div, "class", "error svelte-topaqz");
-    			add_location(div, file, 102, 4, 2760);
+    			add_location(div, file, 102, 4, 2742);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -650,10 +650,10 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			add_location(h2, file, 127, 6, 3462);
-    			add_location(ul, file, 128, 6, 3487);
+    			add_location(h2, file, 127, 6, 3444);
+    			add_location(ul, file, 128, 6, 3469);
     			attr_dev(div, "class", "feedback-list");
-    			add_location(div, file, 126, 4, 3428);
+    			add_location(div, file, 126, 4, 3410);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -737,10 +737,10 @@ var app = (function () {
     			t4 = space();
     			t5 = text(t5_value);
     			t6 = space();
-    			add_location(strong0, file, 131, 12, 3563);
-    			add_location(br, file, 131, 55, 3606);
-    			add_location(strong1, file, 132, 12, 3623);
-    			add_location(li, file, 130, 10, 3546);
+    			add_location(strong0, file, 131, 12, 3545);
+    			add_location(br, file, 131, 55, 3588);
+    			add_location(strong1, file, 132, 12, 3605);
+    			add_location(li, file, 130, 10, 3528);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -856,36 +856,36 @@ var app = (function () {
     			if_block3.c();
     			t14 = space();
     			if (if_block4) if_block4.c();
-    			add_location(h1, file, 82, 2, 2286);
+    			add_location(h1, file, 82, 2, 2268);
     			attr_dev(input0, "type", "text");
     			attr_dev(input0, "placeholder", "Enter your input");
     			attr_dev(input0, "class", "svelte-topaqz");
-    			add_location(input0, file, 84, 4, 2322);
+    			add_location(input0, file, 84, 4, 2304);
     			button0.disabled = /*isLoading*/ ctx[4];
     			attr_dev(button0, "class", "svelte-topaqz");
-    			add_location(button0, file, 85, 4, 2402);
-    			add_location(div0, file, 83, 2, 2312);
-    			add_location(h2, file, 108, 4, 2903);
+    			add_location(button0, file, 85, 4, 2384);
+    			add_location(div0, file, 83, 2, 2294);
+    			add_location(h2, file, 108, 4, 2885);
     			attr_dev(textarea, "placeholder", "Enter your feedback");
     			attr_dev(textarea, "class", "svelte-topaqz");
-    			add_location(textarea, file, 109, 4, 2932);
+    			add_location(textarea, file, 109, 4, 2914);
     			attr_dev(button1, "class", "svelte-topaqz");
-    			add_location(button1, file, 110, 4, 3014);
+    			add_location(button1, file, 110, 4, 2996);
     			attr_dev(div1, "class", "feedback-section svelte-topaqz");
-    			add_location(div1, file, 107, 2, 2868);
+    			add_location(div1, file, 107, 2, 2850);
     			attr_dev(label, "for", "userId");
-    			add_location(label, file, 114, 4, 3095);
+    			add_location(label, file, 114, 4, 3077);
     			attr_dev(input1, "type", "number");
     			attr_dev(input1, "id", "userId");
     			attr_dev(input1, "placeholder", "Enter user ID");
     			attr_dev(input1, "class", "svelte-topaqz");
-    			add_location(input1, file, 115, 4, 3136);
+    			add_location(input1, file, 115, 4, 3118);
     			button2.disabled = /*isLoading*/ ctx[4];
     			attr_dev(button2, "class", "svelte-topaqz");
-    			add_location(button2, file, 116, 4, 3224);
-    			add_location(div2, file, 113, 4, 3085);
+    			add_location(button2, file, 116, 4, 3206);
+    			add_location(div2, file, 113, 4, 3067);
     			attr_dev(main, "class", "svelte-topaqz");
-    			add_location(main, file, 81, 0, 2277);
+    			add_location(main, file, 81, 0, 2259);
     		},
     		l: function claim(nodes) {
     			throw new Error_1("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -1074,8 +1074,8 @@ var app = (function () {
     			console.log("API Response:", data);
 
     			// Check if the response contains the sentiment data
-    			if (data && data.sentiment && data.confidence) {
-    				$$invalidate(0, prediction = `Sentiment: ${data.sentiment}, Confidence: ${data.confidence.toFixed(2)}`);
+    			if (data && data.label && data.score) {
+    				$$invalidate(0, prediction = `Sentiment: ${data.label}, Confidence: ${data.score.toFixed(2)}`);
     			} else {
     				$$invalidate(5, errorMessage = "No prediction result returned.");
     			}

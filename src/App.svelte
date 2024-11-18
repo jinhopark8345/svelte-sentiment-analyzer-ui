@@ -26,8 +26,8 @@
       console.log("API Response:", data);
 
       // Check if the response contains the sentiment data
-      if (data && data.sentiment && data.confidence) {
-        prediction = `Sentiment: ${data.sentiment}, Confidence: ${data.confidence.toFixed(2)}`;
+      if (data && data.label && data.score) {
+        prediction = `Sentiment: ${data.label}, Confidence: ${data.score.toFixed(2)}`;
       } else {
         errorMessage = "No prediction result returned.";
       }
